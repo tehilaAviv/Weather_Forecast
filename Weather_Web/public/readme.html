@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>readme.html</title>
+</head>
+<body>
+<h1>Internet Course - Exercise 4</h1>
+<h2>Personal Information of the students:</h2>
+<ul>
+    <li>1) Student Name:Tehila Aviv</li>
+    <li>ID: 211417019</li>
+    <li>tehilaav@edu.hac.ac.il</li>
+<div>
+    <li>2) Student Name:Sara Eden Elias</li>
+    <li>ID: 211504089</li>
+    <li>gudit1122@gmail.com</li>
+</div>
+</ul>
+
+<h2>Explanation of the exercise:</h2>
+<div>1) Customer side handling: In the views folder we have created 4 pages and they are: the site login, registration, password entry page, and the home page - the main page where the user will be shown his list of cities and upload the forecast for the cities he chooses.</div>
+<div>In the javascript folder we have created several pages and they are:</div>
+<div># password page - where the passwords that are equal are checked, and if no error message is displayed.</div>
+<div># index page - which handles everything related to the user's home page, displays his list of cities, handles the loading of the weather forecast of the selected cities, validation of the fields entered and handles actions: adding a city to the list, deleting from the list and resetting the list.</div>
+<div>2) Server side handling: We have created some pages in the routes folder and they are:</div>
+<div># register.js page - where all the routers that handle user registration to the site are located.</div>
+<div># login.js page - where all the routers that handle the user's login to the site are located.</div>
+<div># cities.js page - which handles api, everything related to adding cities to the database, deleting cities and resetting the user's list of cities.</div>
+</div>
+
+<h2>Remarks:</h2>
+<ul>
+    <li>On the registration page by entering the first name and last name only letters in English with no white spaces between the words should be entered. When an error is displayed, the user is notified.</li>
+    <li>We implemented a duplication check in the list of cities for each user. The test is done only on the name of the city, which means that the user cannot add a city that already exists in the list. In case the user has added a city that already exists he will be shown an error message about it and the city will not be added to the list.</li>
+    <li>In routers that handle login and registration, for each router from the post method we also created a router from the divorce method, which checks if the hassle is connected and if so takes the user to the site to his home page and otherwise sends him to the login page</li>
+    <li>The link between the users 'table and the cities' table in the database will be made according to the user's ID and not according to his email.</li>
+    <li>We used a cookie for the registration process, to check if the user completed the registration process (name + email + password) within a minute of entering the name and email.</li>
+    <li>We also used the session to know if the user is already logged in to the site</li>
+</ul>
+
+
+
+<address>Submitted 24 january 2021 </address>
+</body>
+</html>

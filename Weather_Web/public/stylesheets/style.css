@@ -1,0 +1,22 @@
+
+a {
+  color: #00B7FF;
+}
+.responsive {
+  width: 100%;
+  height: auto;
+}
+.design_h1{
+  background-color: lightgrey;
+  padding: 45px;
+  border-radius: 2px;
+}
+.designForm{
+  background-color:ghostwhite;
+  border-radius: 2px;
+  border: 1px solid lightgrey;
+}
+.space{
+  padding: 10px;
+
+}
